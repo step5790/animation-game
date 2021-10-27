@@ -1,0 +1,353 @@
+/*main containers*/
+
+section {
+    display: flex;
+    flex-direction: row;
+    grid-row-gap: 2px;
+}
+
+.Credits {
+    width: 21vw;
+    height: auto;
+    text-align: center;
+    font-family: Chiller;
+    font-size: 3vw;
+    color: red;
+}
+
+.game {
+    position: relative;
+    width: 76.8vw;
+    height: 43.2vw;
+    grid-area: game;
+    overflow: hidden;
+}
+
+/*backgrounds*/
+
+.game_background {
+    background-image: url(http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/product/svg/background.svg);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    z-index: -1;
+}
+
+.game_foreground_1 {
+    background-image: url(http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/product/svg/foreground_1.svg);
+    position: absolute;
+    background-size: contain;
+    width: 23vw;
+    height: 13vw;
+    top: 32vw;
+    left: 0vw;
+    z-index: 2;
+}
+
+.game_foreground {
+    background-image: url(http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/product/svg/foreground.svg);
+    position: absolute;
+    background-size: contain;
+    width: 9vw;
+    height: 12vw;
+    top: 32vw;
+    left: 68vw;
+    z-index: 2;
+}
+
+/*sprites*/
+
+.character_container {
+    position: absolute;
+    width: 8vw;
+    height: 14vw;
+    background-size: contain;
+    top: 13vw;
+    left: 11vw;
+}
+
+#character {
+    position: absolute;
+    background-image: url(http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/product/svg/character.svg);
+    background-size: contain;
+    width: 8vw;
+    height: 14vw;
+}
+
+.character_sad {
+    background-image: url(http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/product/svg/character_sad.svg);
+}
+
+#character_arm {
+    position: absolute;
+    background-image: url(http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/product/svg/character_gun.svg);
+    background-size: contain;
+    width: 8vw;
+    height: 14vw;
+}
+
+/***************zombies****************/
+
+.zombie-container {
+    width: 8vw;
+    height: 13vw;
+    position: absolute;
+}
+
+#zombie {
+    width: 8vw;
+    height: 13vw;
+    position: absolute;
+}
+
+.dead_zombie {
+    position: absolute;
+    background-image: url(http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/product/svg/zombie_dead.svg);
+    background-size: contain;
+}
+
+.zombie1 {
+    position: absolute;
+    background-image: url(http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/product/svg/zombie_character.svg);
+    background-size: contain;
+}
+
+/***************workers****************/
+
+.worker-container {
+    width: 8vw;
+    height: 14.5vw;
+    position: absolute;
+}
+
+#worker {
+    width: 8vw;
+    height: 14.5vw;
+    position: absolute;
+}
+
+.ghost {
+    position: absolute;
+    background-image: url(http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/product/svg/ghost.svg);
+    background-size: contain;
+
+}
+
+.worker1 {
+    position: absolute;
+    background-image: url(http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/product/svg/civilian.svg);
+    background-size: contain;
+}
+
+/*UI_elements*/
+
+#life div {
+    position: absolute;
+    width: 28vw;
+    height: 9vw;
+    background-size: contain;
+    top: 1vw;
+    left: 2vw;
+}
+
+.life_bar {
+    background-image: url(http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/product/svg/life_bar.svg);
+}
+
+.life_liquid {
+    background-image: url(http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/product/svg/life_liquid.svg);
+}
+
+.life_liquid_two {
+    background-image: url(http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/product/svg/life_liquid_two.svg);
+}
+
+.life_liquid_green {
+    background-image: url(http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/product/svg/life_liquid_green.svg);
+}
+
+.life_sad_player {
+    background-image: url(http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/product/svg/life_sad_player.svg);
+}
+
+.life_happy_player {
+    background-image: url(http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/product/svg/life_happy_player.svg);
+}
+
+.score_board {
+    position: absolute;
+    width: 19vw;
+    height: 8vw;
+    background-size: contain;
+    background-image: url(http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/product/svg/score_board.svg);
+    top: 1vw;
+    left: 55vw;
+}
+
+.score_board p {
+    text-align: center;
+    font-size: 2vw;
+    padding-left: 5vw;
+}
+
+/*hidden_screens*/
+
+.title_screen {
+    display: none;
+    background-image: url(http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/product/svg/title_screen.svg);
+    position: relative;
+    background-size: 100%;
+    width: 100vw;
+    max-width: 177.8vw;
+    height: 100vw;
+    max-height: 56.25vw;
+}
+
+.scenario {
+    display: none;
+    background-image: url(http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/product/svg/scenario.svg);
+    background-color: black;
+    position: relative;
+    background-size: 50%;
+    background-position: center;
+    width: 100vw;
+    max-width: 177.8vw;
+    height: 100vw;
+    max-height: 56.25vw;
+}
+
+.game_over {
+    display: none;
+    background-image: url(http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/product/svg/game_over.svg);
+    position: relative;
+    background-size: 100%;
+    width: 100vw;
+    max-width: 177.8vw;
+    height: 100vw;
+    max-height: 56.25vw;
+}
+
+.level_clear {
+    display: none;
+    background-image: url(http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/product/svg/level_clear.svg);
+    background-color: black;
+    background-position: center;
+    position: relative;
+    background-size: 50%;
+    width: 100vw;
+    max-width: 177.8vw;
+    height: 100vw;
+    max-height: 56.25vw;
+}
+
+/*positions*/
+
+.stop {
+    animation-play-state: paused;
+}
+
+.position1 {
+    left: 100vw;
+    top: 13vw;
+}
+
+.position2 {
+    left: 100vw;
+    top: 19vw;
+}
+
+.position3 {
+    left: 100vw;
+    top: 23vw;
+}
+
+.position4 {
+    left: 100vw;
+    top: 10vw;
+}
+
+/*animations*/
+
+.moving1 {
+    animation: moving1;
+    animation-duration: 10s;
+    transition-timing-function: cubic-bezier(0.62, 0.02, 0.81, 0.84);
+    animation-iteration-count: infinite;
+}
+
+@keyframes moving1 {
+    0% {
+        transform: translatex(0vw);
+    }
+
+    100% {
+        transform: translatex(-120vw);
+    }
+}
+
+.moving2 {
+    animation: moving2;
+    animation-duration: 15s;
+    transition-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moving2 {
+    0% {
+        transform: translatex(0vw);
+    }
+
+    25% {
+        transform: translatex(-50vw);
+    }
+
+    25% {
+        transform: translatex(-75vw);
+    }
+
+    100% {
+        transform: translatex(-120vw);
+    }
+}
+
+.moving3 {
+    animation: moving3;
+    animation-duration: 10s;
+    transition-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moving3 {
+    0% {
+        transform: translatex(0vw);
+    }
+
+    25% {
+        transform: translatex(-25vw);
+    }
+
+    25% {
+        transform: translatex(-75vw);
+    }
+
+    100% {
+        transform: translatex(-120vw);
+    }
+}
+
+.zoom_in {
+    animation: zoom_in;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes zoom_in {
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+.stop {
+    animation-play-state: paused;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Resident Zombie</title>
+  </head>
+
+  <body>
+    <section>
+      <div class="game">
+        <div class="game_background"></div>
+        <audio
+          id="back_sound"
+          src="http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/design/sounds/ambience.mp3"
+        ></audio>
+        <div id="game_foreground">
+          <div class="game_foreground_1"></div>
+          <div class="game_foreground"></div>
+        </div>
+
+        <div class="game_sprites">
+          <div class="character_container">
+            <div id="character"></div>
+            <audio
+              id="gun_sound"
+              src="http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/design/sounds/gunshot.mp3"
+            ></audio>
+            <div id="character_arm"></div>
+            <div id="gun_fire"></div>
+          </div>
+
+          <div id="zombie-container">
+            <div id="zombie"></div>
+          </div>
+
+          <div id="zombie-container2">
+            <div id="zombie2"></div>
+          </div>
+
+          <div id="zombie-container3">
+            <div id="zombie3"></div>
+          </div>
+
+          <div id="worker-container">
+            <div id="worker"></div>
+          </div>
+
+          <div id="worker-container2">
+            <div id="worker2"></div>
+          </div>
+
+          <div id="worker-container3">
+            <div id="worker3"></div>
+          </div>
+
+          <audio
+            id="fire_zombie"
+            src="http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/design/sounds/zombie_dead.mp3"
+          ></audio>
+          <audio
+            id="fire_worker"
+            src="http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/design/sounds/civilian_dead.mp3"
+          ></audio>
+        </div>
+      </div>
+
+      <div class="game_ui">
+        <div id="life">
+          <div class="life_bar"></div>
+          <audio
+            id="heart_beat"
+            src="http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/design/sounds/heartbeat.mp3"
+          ></audio>
+          <div class="life_liquid"></div>
+          <div class="life_liquid_one"></div>
+          <div class="life_liquid_two"></div>
+          <div class="life_sad_player"></div>
+          <div class="life_happy_player"></div>
+        </div>
+
+        <div class="score_board">
+          <div class="points"></div>
+        </div>
+
+        <div class="timer"></div>
+
+        <div class="pause"></div>
+        <div class="sound_off"></div>
+        <div class="sound_on"></div>
+      </div>
+
+      <div class="title_screen">
+        <div class="title_loader"></div>
+        <div class="title_start">START</div>
+        <audio
+          id="door_sound"
+          src="http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/design/sounds/door_open.mp3"
+        ></audio>
+      </div>
+
+      <div class="scenario">
+        <div class="scenario_button"></div>
+        <audio
+          id="scene_sound"
+          src="http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/design/sounds/scenario.mp3"
+        ></audio>
+      </div>
+
+      <div class="pause_menu"></div>
+
+      <div class="game_over">
+        <div class="restart_button">PLAY AGAIN!</div>
+        <div class="score_blink">
+          <p>Your Score:</p>
+          <div class="your_score"></div>
+        </div>
+        <audio
+          id="game_over_sound"
+          src="http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/design/sounds/game_over.mp3"
+        ></audio>
+      </div>
+
+      <div class="level_clear">
+        <div class="play_again"></div>
+        <audio
+          id="clear_sound"
+          src="http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/design/sounds/level_complete.mp3"
+        ></audio>
+      </div>
+
+      <div class="Credits">
+        <h1>Resident Zombie</h1>
+        <h2>
+          Stephen Espinosa <br />
+          MMD 2020
+        </h2>
+      </div>
+    </section>
+
+    <script src="js/my_game.js"></script>
+  </body>
+</html>

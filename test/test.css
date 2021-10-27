@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.background {
+    background-image: url(http://meetstephen.dk/KEA/theme_1_bw/basic_animation/module_01/project/product/svg/background.svg);
+    position: relative;
+    height: 93.5vh;
+    width: 100%;
+    background-size: contain;
+}
